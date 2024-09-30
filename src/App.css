@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background-color: rgba(222, 207, 151, 0.691);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  height: 100%;
 }
-
-.App-link {
-  color: #61dafb;
+form{
+  display: flex;
+  flex-direction: column;
+  font-family: "Halant", serif;
 }
+input{
+  width: 70%;
+  padding: 10px 30px;
+  background-color: transparent;
+  color: black;
+  box-shadow: inset 0px 0px 0px 4px #0c602e;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  font-family: "Halant", serif;
+  font-size: 15px;
+}
+button{
+  background-color: #0c602e96;
+  color: black;
+  box-shadow: inset 0px 0px 0px 3px #29c30e;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 10px;
+  font-family: "Halant", serif;
+  font-size: 20px;
+}
+h1{
+  font-family: "Halant", serif;
+  font-size: 50px;
+  text-align: center;
+}
+.information{
+  text-align: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+}
+@media all and (max-width: 500px) {
+  .information{
+    font-size: 25px;
   }
 }
